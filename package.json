@@ -1,0 +1,21 @@
+{
+  "name": "jtrivia",
+  "version": "1.0.0",
+  "description": "Trivia question/answers generator based on the Jeopardy TV shows.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "aikude",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.17.2",
+    "sqlite3": "^4.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
