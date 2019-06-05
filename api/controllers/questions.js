@@ -26,15 +26,18 @@ router.get('/:id', (request, response) => {
 });
 
 router.get('/', (request, response) => {
-    const batchNumber = parseInt(request.query.batch || '1');
-    const batchSize = parseInt(request.query.batchsize || '100');
-    const showAll = parseInt(request.query.all || '0');
-    const sortCol = request.query.sort || 'id';
-    const offset = batchSize*(batchNumber-1);
+    const batchNumber = parseInt(request.query.batch || '1'),
+        batchSize = parseInt(request.query.batchsize || '100'),
+        showAll = parseInt(request.query.all || '0'),
+        sortCol = request.query.sort || 'id',
+        offset = batchSize*(batchNumber-1),
+        reverse = parseInt(request.query.reverse || '0');
     
-    const query = database('questions').orderBy(sortCol).offset(offset);
+    const sortDirection = reverse ? 'desc' : 'asc';
+    
+    const query = database('questions').orderBy(sortCol, sortDirection).offset(offset);
     if (!showAll) query.limit(batchSize);
-
+    
     query
     .then(data => {
         if (data && data.constructor === Array && data.length > 0) return response.json(data);
