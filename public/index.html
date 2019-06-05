@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-md-4 col-12 order-md-2">
                 <div id="disp-card-case">
-                    <div class="card d-none" id="disp-card">
+                    <div class="card border-success d-none" id="disp-card">
                         <div class="card-header" >
                             Answer:
                         </div>
@@ -50,16 +50,16 @@
                 <table id="data-table" class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="colhead" onclick="getAndSetData(sort='id')">
+                            <th scope="col" class="colhead" id="colhead-id">
                                 <span>Id</span><span class="col-arrow" id="col-arrow-id"></span>
                             </th>
-                            <th scope="col" class="colhead" onclick="getAndSetData(sort='category')">
+                            <th scope="col" class="colhead" id="colhead-category">
                                 <span>Category</span><span class="col-arrow" id="col-arrow-category"></span>
                             </th>
-                            <th scope="col" class="colhead" onclick="getAndSetData(sort='value')">
+                            <th scope="col" class="colhead" id="colhead-value">
                                 <span>Prize</span><span class="col-arrow" id="col-arrow-value"></span>
                             </th>
-                            <th scope="col" class="colhead" onclick="getAndSetData(sort='question')">
+                            <th scope="col" class="colhead" id="colhead-question">
                                 <span>Question</span><span class="col-arrow" id="col-arrow-question"></span>
                             </th>
                         </tr>
@@ -69,11 +69,10 @@
                     <ul id="page-links" class="pagination">
                     </ul>
                 </nav>            
-                <nav aria-label="Show all">
+                <nav aria-label="Footer Button">
                         <ul class="pagination">
                             <li class="page-item">
-                                <a class="page-link" href="#" onclick="getAndSetData('id', 1, true)">
-                                    Show all
+                                <a id="footer-btn" class="page-link" href="#">
                                 </a>
                             </li>
                         </ul>
