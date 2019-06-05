@@ -6,11 +6,8 @@ const table = document.getElementById('data-table'),
     dispCardCase = document.getElementById('disp-card-case'),
     dataName = 'questions',
     rowsPerPage = 20,
-<<<<<<< HEAD
     pagesPerBatch = 10,
-=======
     pagesPerBatch = 15,
->>>>>>> 95965f6f78f7d249f44f4f499d5840d5475bdc9f
     rowsPerBatch = rowsPerPage*pagesPerBatch;
 
 // Fetch data rows from API, process and save into Table and pagination
