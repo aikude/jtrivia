@@ -66,8 +66,8 @@ function loadPageElements(sortColumn, showAll, reverse) {
         footerBtn = document.querySelector("#footer-btn"),
         footerBtnText = showAll ? 'Show Less' : 'Show All',
         toggleLinksShowAll = showAll ? false : true,
-        upArrow = '&#9650',
-        downArrow = '&#9660;';
+        upArrow = '&#9660;',
+        downArrow = '&#9650';
 
     columnArrows.forEach(columnArrow => {
         columnArrow.innerHTML = '';
