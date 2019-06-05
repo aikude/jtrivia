@@ -7,7 +7,6 @@ const table = document.getElementById('data-table'),
     dataName = 'questions',
     rowsPerPage = 20,
     pagesPerBatch = 10,
-    pagesPerBatch = 15,
     rowsPerBatch = rowsPerPage*pagesPerBatch;
 
 // Fetch data rows from API, process and save into Table and pagination
