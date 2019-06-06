@@ -196,6 +196,8 @@ function showTablePage(pageId, clickedLink) {
 function showDisplayCard() {
     const clientWidth = window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
 
+    dispCard.classList.remove('d-none');
+    
     if (clientWidth && clientWidth > 767) {
         const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         dispCard.style.marginTop = scrollTop + 'px';
@@ -203,7 +205,6 @@ function showDisplayCard() {
     else {
         window.scrollTo(0,0);
     }
-    dispCard.classList.remove('d-none');
 }
 
 // Hide single result display box
