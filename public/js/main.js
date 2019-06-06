@@ -200,6 +200,9 @@ function showDisplayCard() {
         const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         dispCard.style.marginTop = scrollTop + 'px';
     }
+    else {
+        window.scrollTo(0,0);
+    }
     dispCard.classList.remove('d-none');
 }
 

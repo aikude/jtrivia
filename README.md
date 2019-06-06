@@ -1,5 +1,8 @@
 # jTrivia
 This is a user-friendly Trivia application, pre-loaded with 5,100 questions, to get you up and running instantly.
+It's easy to use on desktop and mobile.
+
+Demo: https://van-jtrivia.herokuapp.com/
 
 The frontend is built with vanilla (plain) javascript, and the backend is built with Node.js and Express.
 The database is SQLite, so you don't need a separate database installation and configuration to
