@@ -203,7 +203,7 @@ function showDisplayCard() {
         dispCard.style.marginTop = scrollTop + 'px';
     }
     else {
-        window.scrollTo(0,0);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 }
 
