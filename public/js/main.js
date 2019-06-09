@@ -101,8 +101,8 @@ function loadDetail(clicked_row) {
                 if (displayElement) displayElement.innerHTML = value;
             }
 
-            showDisplayCard();
             highlightRow(clicked_row.id, 'bg-success text-white');
+            showDisplayCard();
         }
         
     })
@@ -203,7 +203,9 @@ function showDisplayCard() {
         dispCard.style.marginTop = scrollTop + 'px';
     }
     else {
-        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        setTimeout(function () {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }, 600);
     }
 }
 
